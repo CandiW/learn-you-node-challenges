@@ -6,7 +6,7 @@ function uppercase(port){
     let server = http.createServer(function(req, resp){
 
         if(req.method !== 'POST'){
-            return res.end('Send POST');
+            return resp.end('Send POST');
         }
         else {
         req.pipe(map(function(chunk){
