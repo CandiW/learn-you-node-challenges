@@ -33,7 +33,7 @@ function json(port){
         resp.end(JSON.stringify(createQuery(url)));
     }
     else {
-        resp.writeHead(405,"Send GET request");
+        resp.writeHead(404,"Send GET request");
         resp.end();
     }
     });
